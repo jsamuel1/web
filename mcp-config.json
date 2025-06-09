@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pi-hole": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "http://pi.hole/mcp"],
+      "env": {}
+    }
+  }
+}
