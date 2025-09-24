@@ -252,6 +252,12 @@
                                 <i class="fa fa-fw menu-icon fa-network-wired"></i> <span>Network</span>
                             </a>
                         </li>
+                        <!-- Performance -->
+                        <li<? if scriptname == 'performance' then ?> class="active"<? end ?>>
+                            <a href="<?=webhome?>performance">
+                                <i class="fa fa-fw menu-icon fa-tachometer-alt"></i> <span>Performance</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 

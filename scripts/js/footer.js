@@ -17,6 +17,7 @@ const REFRESH_INTERVAL = {
   query_log: 2000, // 2 sec (Query Log)
   blocking: 10_000, // 10 sec (all pages, sidebar)
   metrics: 10_000, // 10 sec (settings page)
+  performance: 10_000, // 10 sec (performance page)
   system: 20_000, // 20 sec (all pages, sidebar)
   query_types: 60_000, // 1 min (dashboard)
   upstreams: 60_000, // 1 min (dashboard)

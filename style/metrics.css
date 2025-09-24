@@ -1,0 +1,56 @@
+/* Pi-hole: A black hole for Internet advertisements
+ *  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+ *  Network-wide ad blocking via your own hardware.
+ *
+ *  This file is copyright under the latest version of the EUPL.
+ *  Please see LICENSE file for your rights under this license. */
+
+/* Styling for the performance dashboard */
+
+.metric-box {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.metric-box h4 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #3c8dbc;
+}
+
+.metric-box p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .metric-box {
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+}
+
+/* Animation for metrics that are updated */
+@keyframes highlight {
+  0% { background-color: transparent; }
+  20% { background-color: rgba(60, 141, 188, 0.2); }
+  100% { background-color: transparent; }
+}
+
+.highlight-update {
+  animation: highlight 1.5s ease-in-out;
+}
